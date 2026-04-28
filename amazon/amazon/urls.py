@@ -11,6 +11,8 @@ from rest_framework import permissions
 
 router = DefaultRouter()
 router.register(r'clientes', views.ClienteViewSet, basename='cliente')
+router.register(r'vendedores', views.VendedorViewSet, basename='vendedor') # NOVO
+router.register(r'produtos', views.ProdutoViewSet, basename='produto') # NOVO
 
 
 schema_view = get_schema_view(
